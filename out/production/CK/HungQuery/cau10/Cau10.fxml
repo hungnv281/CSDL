@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HungQuery.cau10.Cau10">
+   <children>
+      <Label alignment="CENTER" layoutX="3.0" layoutY="6.0" prefHeight="40.0" prefWidth="1280.0" text="THÔNG TIN NHÂN VIÊN CÓ CHỮ &quot;VŨ&quot; TRONG TÊN" />
+      <TableView fx:id="table10" layoutX="3.0" layoutY="73.0" prefHeight="627.0" prefWidth="1280.0">
+        <columns>
+          <TableColumn fx:id="maNVColumn" minWidth="256.0" prefWidth="75.0" text="MÃ NHÂN VIÊN" />
+          <TableColumn fx:id="hotenColumn" minWidth="256.0" prefWidth="75.0" text="HỌ TÊN" />
+            <TableColumn fx:id="quequanColumn" minWidth="256.0" prefWidth="75.0" text="QUÊ QUÁN" />
+            <TableColumn fx:id="tenPBColumn" minWidth="256.0" prefWidth="75.0" text="TÊN PHÒNG BAN" />
+            <TableColumn fx:id="tenTDHVColumn" minWidth="256.0" prefWidth="75.0" text="TRÌNH ĐỘ HỌC VẤN" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

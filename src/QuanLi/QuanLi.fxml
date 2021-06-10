@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanLi.QuanLi">
+    <ComboBox fx:id="comboBox" layoutX="59.0" layoutY="161.0" onAction="#comboBoxChange" prefHeight="26.0" prefWidth="274.0" />
+    <Text fx:id="timKiemNhanh" fill="#e51010" layoutX="59.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tim kiem trong bảng" textAlignment="CENTER" wrappingWidth="274.4000000000001">
+        <font>
+          <Font size="22.0" />
+        </font>
+    </Text>
+    <Button fx:id="findButton" layoutX="121.0" layoutY="268.0" mnemonicParsing="false" onAction="#findButtonOnAction" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: #0589ff;" text="SEARCH" textFill="#ecf707" />
+    <Button fx:id="cancelButton" layoutX="1067.0" layoutY="642.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: #ff0707;" text="CANCEL" textFill="#e5fa00" />
+    <Text fx:id="message" fill="#7f0e0e" layoutX="59.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your choose" textAlignment="CENTER" wrappingWidth="274.4000000000001">
+        <font>
+          <Font size="19.0" />
+        </font>
+    </Text>
+    <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="1280.0" text="QUẢN LÍ NHÂN SỰ" textFill="#2730d9">
+        <font>
+          <Font size="22.0" />
+        </font>
+    </Label>
+   <TreeTableView fx:id="tableView" layoutX="408.0" layoutY="215.0" prefHeight="406.0" prefWidth="814.0">
+     <columns>
+       <TreeTableColumn fx:id="column1" prefWidth="720.7999877929688" text="DANH SÁCH QUERY" />
+     </columns>
+   </TreeTableView>
+   <ComboBox fx:id="minhCbb" layoutX="408.0" layoutY="128.0" prefWidth="150.0" promptText="Minh Query" />
+   <ComboBox fx:id="hungCbb" layoutX="707.0" layoutY="128.0" prefWidth="150.0" promptText="Hùng Query" />
+   <ComboBox fx:id="taCbb" layoutX="992.0" layoutY="128.0" prefWidth="150.0" promptText="Tuấn Anh Query" />
+   <Button layoutX="573.0" layoutY="128.0" mnemonicParsing="false" onAction="#clickButtonOnAction1" prefHeight="26.0" prefWidth="48.0" text="xem" />
+   <Button layoutX="875.0" layoutY="128.0" mnemonicParsing="false" onAction="#clickButtonOnAction2" prefHeight="26.0" prefWidth="48.0" text="xem" />
+   <Button layoutX="1156.0" layoutY="128.0" mnemonicParsing="false" onAction="#clickButtonOnAction3" prefHeight="26.0" prefWidth="48.0" text="xem" />
+</AnchorPane>

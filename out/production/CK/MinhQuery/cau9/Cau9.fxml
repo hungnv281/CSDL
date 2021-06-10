@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MinhQuery.cau9.Cau9">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="7.0" prefHeight="40.0" prefWidth="1280.0" text="THÔNG TIN NHÂN VIÊN LÀM VIỆC LÂU NĂM NHƯNG CHƯA ĐƯỢC THĂNG CHỨC" />
+        <TableView fx:id="table9" layoutX="3.0" layoutY="53.0" prefHeight="650.0" prefWidth="1280.0">
+            <columns>
+                <TableColumn fx:id="mnvColumn" minWidth="152.80001521110535" prefWidth="152.80001521110535" text="MÃ NHÂN VIÊN" />
+                <TableColumn fx:id="hotenColumn" minWidth="194.3999786376953" prefWidth="194.3999786376953" text="HỌ TÊN" />
+                <TableColumn fx:id="sdtColumn" minWidth="128.79998779296875" prefWidth="160.79998779296875" text="SỐ ĐIỆN THOẠI" />
+                <TableColumn fx:id="tenCVColumn" minWidth="181.5999755859375" prefWidth="181.5999755859375" text="TÊN CHỨC VỤ" />
+                <TableColumn fx:id="tenPBColumn" minWidth="207.199951171875" prefWidth="209.5999755859375" text="TÊN PHÒNG BAN" />
+                <TableColumn fx:id="ngayBDColumn" minWidth="213" prefWidth="224.79998779296875" text="NGÀY BẮT ĐẦU" />
+                <TableColumn fx:id="thoiGianColumn" prefWidth="150.0" text="THỜI GIAN" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

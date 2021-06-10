@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MinhQuery.cau8.Cau8"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="7.0" prefHeight="40.0" prefWidth="1280.0" text="LỊCH SỬ THĂNG TIẾN" />
+        <TableView fx:id="table8" layoutX="3.0" layoutY="53.0" prefHeight="650.0" prefWidth="1280.0">
+            <columns>
+                <TableColumn fx:id="mnvColumn" minWidth="213.0" prefWidth="75.0" text="MÃ NHÂN VIÊN" />
+                <TableColumn fx:id="tenCVColumn" minWidth="213.0" prefWidth="75.0" text="TÊN CHỨC VỤ" />
+                <TableColumn fx:id="tenPBColumn" minWidth="191.20001220703125" prefWidth="205.60003662109375" text="TÊN PHÒNG BAN" />
+                <TableColumn fx:id="ngayBDColumn" minWidth="184.79998779296875" prefWidth="184.79998779296875" text="NGÀY BẮT ĐẦU" />
+                <TableColumn fx:id="ngayKTColumn" prefWidth="162.40008544921875" text="NGÀY KẾT THÚC" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

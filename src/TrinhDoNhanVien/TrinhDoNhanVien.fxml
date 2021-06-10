@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TrinhDoNhanVien.TrinhDoNhanVien">
+
+    <TableView fx:id="tableTDNV" layoutY="66.0" onMouseClicked="#getSelectedTDNV" prefHeight="417.0" prefWidth="1280.0">
+        <columns>
+            <TableColumn fx:id="mtdhvColum" prefWidth="426.0" text="Mã trình độ học vấn" />
+            <TableColumn fx:id="tdhvColum" prefWidth="426.0" text="Trình độ học vấn" />
+            <TableColumn fx:id="cnColum" prefWidth="427.0" text="Chuyên Ngành" />
+        </columns>
+    </TableView>
+    <Button fx:id="addBtn" layoutX="39.0" layoutY="527.0" mnemonicParsing="false" onAction="#addTDHV" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #108cdf;" text="ADD" textFill="#ebd805" />
+    <Button fx:id="updateBtn" layoutX="39.0" layoutY="581.0" mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #108cdf;" text="UPDATE" textFill="#e5e51e" />
+    <Button fx:id="deleteBtn" layoutX="39.0" layoutY="631.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #da0e0e;" text="DELETE" textFill="#ede8e8" />
+    <Button fx:id="cancelBtn" layoutX="1089.0" layoutY="618.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #ef0909;" text="CANCEL" textFill="#edd209" />
+    <TextField fx:id="maTDHVText" layoutX="195.0" layoutY="520.0" prefHeight="40.0" prefWidth="202.0" promptText="ma trinh do hoc van" />
+    <TextField fx:id="TDHVText" layoutX="501.0" layoutY="520.0" prefHeight="40.0" prefWidth="202.0" promptText="trinh do hoc van" />
+    <TextField fx:id="CNText" layoutX="835.0" layoutY="521.0" prefHeight="40.0" prefWidth="202.0" promptText="chuyen nganh" />
+   <Label alignment="CENTER" layoutX="6.0" layoutY="14.0" prefHeight="40.0" prefWidth="1280.0" text="BẢNG THÔNG TIN TRÌNH ĐỘ HỌC VẤN" textFill="#1b6bea">
+      <font>
+         <Font size="23.0" />
+      </font>
+   </Label>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MinhQuery.cau6.Cau6">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="7.0" prefHeight="40.0" prefWidth="1280.0" text="NHÂN VIÊN NAM CÓ TRÌNH ĐỘ TỐT NGHIỆP ĐẠI HỌC CHUYÊN NGÀNH MARKETTING" textFill="#0037dd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TableView fx:id="table6" layoutX="3.0" layoutY="53.0" prefHeight="650.0" prefWidth="1280.0">
+            <columns>
+                <TableColumn fx:id="mnvColumn" minWidth="213.0" prefWidth="75.0" text="MÃ NHÂN VIÊN" />
+                <TableColumn fx:id="hotenColumn" minWidth="213.0" prefWidth="75.0" text="HỌ TÊN" />
+                <TableColumn fx:id="quequanColumn" minWidth="192.80007934570312" prefWidth="192.80007934570312" text="QUÊ QUÁN" />
+                <TableColumn fx:id="gioitinhColumn" minWidth="114.39996337890625" prefWidth="114.39996337890625" text="GIỚI TÍNH" />
+                <TableColumn fx:id="sdtColumn" minWidth="191.20001220703125" prefWidth="205.60003662109375" text="SỐ ĐIỆN THOẠI" />
+                <TableColumn fx:id="tenTDHVColumn" minWidth="184.79998779296875" prefWidth="184.79998779296875" text="TÊN TDHV" />
+            <TableColumn fx:id="chuyennganhColumn" prefWidth="152.800048828125" text="CHUYÊN NGÀNH" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

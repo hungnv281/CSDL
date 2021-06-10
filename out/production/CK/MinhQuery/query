@@ -1,0 +1,12 @@
+
+query 1:
+cho biết số lượng nhân viên tại mỗi phòng ban của công ty;
+query 2 :
+cho biết số lượng, thông tin các nhân viên săp hết hạn hợp đồng(thời hạn hợp đồng còn lại <= 1 tháng);
+query 3:
+cho biết thông tin về các lãnh đạo trong công ty( trường phòng, giám đốc...);
+query 4:
+cho biết thông tin các nhân viên sắp được tăng lương định kì theo năm ( 1 năm tăng lương 1 lần );
+query 5:
+
+

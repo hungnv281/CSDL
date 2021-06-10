@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThangTien.ThangTien">
+   <children>
+      <Label alignment="CENTER" layoutY="8.0" prefHeight="40.0" prefWidth="1280.0" text="THĂNG TIẾN" />
+      <TableView fx:id="tableTT" layoutY="56.0" onMouseClicked="#getSelectedTT" prefHeight="449.0" prefWidth="1280.0">
+        <columns>
+          <TableColumn fx:id="maNVColumn" minWidth="256.0" prefWidth="75.0" text="MÃ NHÂN VIÊN" />
+          <TableColumn fx:id="maCVColumn" minWidth="256.0" prefWidth="75.0" text="MÃ CHỨC VỤ" />
+            <TableColumn fx:id="maPBColumn" minWidth="256.0" prefWidth="75.0" text="MÃ PHÒNG BAN" />
+            <TableColumn fx:id="ngayTTColumn" minWidth="256.0" prefWidth="75.0" text="NGÀY TIẾP NHẬN" />
+            <TableColumn fx:id="ngayKTColumn" minWidth="256.0" prefWidth="75.0" text="NGÀY KẾT THÚC" />
+        </columns>
+      </TableView>
+      <Button fx:id="updateButton" layoutX="29.0" layoutY="571.0" mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #0589ff;" text="UPDATE" textFill="#ffff00" />
+      <Button fx:id="addButton" layoutX="29.0" layoutY="519.0" mnemonicParsing="false" onAction="#ADD" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #0589ff;" text="ADD" textFill="#ebe909" />
+      <Button fx:id="cancelButton" layoutX="1139.0" layoutY="653.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="93.0" style="-fx-background-color: #e4000f;" text="CANCEL" textFill="#eef205" />
+      <TextField fx:id="maNVText" layoutX="168.0" layoutY="532.0" prefHeight="26.0" prefWidth="178.0" promptText="mã nhân viên" />
+      <Button fx:id="deleteButton" layoutX="29.0" layoutY="626.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #e4000f;" text="DELETE" textFill="#d2e300" />
+      <TextField fx:id="maCVText" layoutX="168.0" layoutY="598.0" prefHeight="26.0" prefWidth="178.0" promptText="mã chức vụ" />
+      <TextField fx:id="maPBText" layoutX="482.0" layoutY="532.0" prefHeight="26.0" prefWidth="178.0" promptText="mã phòng ban" />
+      <TextField fx:id="ngayTTText" layoutX="482.0" layoutY="598.0" prefHeight="26.0" prefWidth="178.0" promptText="ngày tiếp nhận" />
+      <TextField fx:id="ngayKTText" layoutX="761.0" layoutY="558.0" prefHeight="26.0" prefWidth="178.0" promptText="ngày kết thúc" />
+   </children>
+</AnchorPane>

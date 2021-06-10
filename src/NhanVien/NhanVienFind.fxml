@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="685.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NhanVien.DanhSachNhanVien">
+    <Text layoutX="166.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh Sach Nhan Vien" textAlignment="CENTER" wrappingWidth="532.5366821289062">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <TableView fx:id="tableNhanVien" layoutX="11.0" layoutY="48.0" onMouseClicked="#getSelected" prefHeight="440.0" prefWidth="941.0">
+        <columns>
+            <TableColumn fx:id="maNVColum" prefWidth="85.60000610351562" text="MÃ NV" />
+            <TableColumn fx:id="nameColum" prefWidth="126.39999389648438" text="HỌ TÊN" />
+            <TableColumn fx:id="dobColum" prefWidth="92.80000305175781" text="Ngày Sinh" />
+            <TableColumn fx:id="addressColum" prefWidth="152.79998779296875" text="Quê Quán" />
+            <TableColumn fx:id="genderColum" prefWidth="62.4000244140625" text="GIới Tính" />
+            <TableColumn fx:id="nationColum" prefWidth="76.800048828125" text="Dân Tộc" />
+            <TableColumn fx:id="phoneNumberColum" prefWidth="96.0" text="SĐT" />
+            <TableColumn fx:id="maPBColum" prefWidth="54.39996337890625" text="MÃ PB" />
+            <TableColumn fx:id="maCVColum" prefWidth="44.800048828125" text="MÃ CV" />
+            <TableColumn fx:id="maTDHVColum" prefWidth="60.8001708984375" text="MÃ TĐHV" />
+            <TableColumn fx:id="bacLuongColum" prefWidth="72.7999267578125" text="BAC LUONG" />
+        </columns>
+    </TableView>
+    <Button layoutX="30.0" layoutY="546.0" mnemonicParsing="false" onAction="#edit" prefHeight="44.0" prefWidth="80.0" style="-fx-background-color: #8be504;" text="UPDATE" textFill="#4a07e3" />
+    <TextField fx:id="maNVText" layoutX="166.0" layoutY="500.0" prefHeight="26.0" prefWidth="243.0" promptText="mã số nhân viên" />
+    <TextField fx:id="nameText" layoutX="166.0" layoutY="544.0" prefHeight="26.0" prefWidth="243.0" promptText="Họ và Tên" />
+    <TextField fx:id="addressText" layoutX="166.0" layoutY="636.0" prefHeight="26.0" prefWidth="243.0" promptText="Quê Quán" />
+    <TextField fx:id="phoneNumberText" layoutX="477.0" layoutY="590.0" promptText="Số Điện Thoại" />
+    <TextField fx:id="nationText" layoutX="477.0" layoutY="544.0" promptText="Dân tộc" />
+    <TextField fx:id="genderText" layoutX="476.0" layoutY="501.0" promptText="Giới tính" />
+    <TextField fx:id="maPBText" layoutX="477.0" layoutY="636.0" promptText="Mã phòng ban" />
+    <TextField fx:id="maCVText" layoutX="699.0" layoutY="501.0" promptText="mã chức vụ" />
+    <TextField fx:id="maTDHVText" layoutX="699.0" layoutY="544.0" promptText="trình độ học vấn" />
+    <TextField fx:id="bacLuongText" layoutX="699.0" layoutY="590.0" promptText="bậc lương" />
+    <TextField fx:id="dobText" layoutX="166.0" layoutY="590.0" prefHeight="26.0" prefWidth="243.0" promptText="Ngay sinh" />
+</AnchorPane>

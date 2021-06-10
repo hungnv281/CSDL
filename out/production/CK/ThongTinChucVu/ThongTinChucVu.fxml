@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThongTinChucVu.ThongTinChucVu">
+    <TableView fx:id="tableChucVu" layoutX="7.0" layoutY="63.0" onMouseClicked="#getSelectedCV" prefHeight="323.0" prefWidth="1104.0">
+        <columns>
+            <TableColumn fx:id="mcvColumn" prefWidth="504.79997539520264" text="Mã chức vụ" />
+            <TableColumn fx:id="tcvColumn" prefWidth="596.0001220703125" text="Tên chức vụ" />
+        </columns>
+    </TableView>
+    <Button fx:id="addButton" layoutX="59.0" layoutY="617.0" mnemonicParsing="false" onAction="#ADD" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #0589ff;" text="ADD" textFill="#f6fa0a" />
+    <Button fx:id="updateButton" layoutX="230.0" layoutY="617.0" mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #0589ff;" text="UPDATE" textFill="#e5fd0e" />
+    <Button fx:id="deleteButton" layoutX="427.0" layoutY="617.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #df0707;" text="DELETE" textFill="#cbde09" />
+    <Button fx:id="cancelButton" layoutX="1121.0" layoutY="617.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #df0707;" text="CANCEL" textFill="#ffff04" />
+    <TextField fx:id="tcvText" layoutX="703.0" layoutY="440.0" prefHeight="40.0" prefWidth="214.0" promptText="tên chức vụ" />
+    <TextField fx:id="mcvText" layoutX="320.0" layoutY="447.0" prefHeight="40.0" prefWidth="213.0" promptText="mã chức vụ" />
+   <Label alignment="CENTER" layoutX="8.0" layoutY="14.0" prefHeight="40.0" prefWidth="1280.0" text="DANH SÁCH CHỨC VỤ" textAlignment="CENTER" textFill="#2a37ea">
+      <font>
+         <Font size="23.0" />
+      </font>
+   </Label>
+   <Text layoutX="236.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã chức vụ">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text layoutX="611.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên chức vụ">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+</AnchorPane>

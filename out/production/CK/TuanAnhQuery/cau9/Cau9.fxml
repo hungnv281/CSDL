@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TuanAnhQuery.cau9.Cau9">
+    <Label alignment="CENTER" layoutX="2.0" prefHeight="40.0" prefWidth="1280.0" text="THÔNG TIN NHÂN VIÊN CÓ HỢP ĐỒNG HẾT HẠN TRƯỚC THÁNG 12/2021" />
+    <TableView fx:id="table9" layoutX="-5.0" layoutY="70.0" prefHeight="630.0" prefWidth="1280.0">
+        <columns>
+            <TableColumn fx:id="mNVColumn" minWidth="80.7999849319458" prefWidth="98.39999103546143" text="MÃ NHÂN VIÊN" />
+            <TableColumn fx:id="hoTenColumn" minWidth="89.60000610351562" prefWidth="130.4000244140625" text="HỌ TÊN" />
+            <TableColumn fx:id="ngaySinhColumn" minWidth="96.00001525878906" prefWidth="96.00001525878906" text="NGÀY SINH" />
+            <TableColumn fx:id="queQuanColumn" minWidth="115.20001220703125" prefWidth="115.20001220703125" text="QUÊ QUÁN" />
+            <TableColumn fx:id="gioiTinhColumn" minWidth="66.4000244140625" prefWidth="66.4000244140625" text="GIỚI TÍNH" />
+            <TableColumn fx:id="danTocColumn" minWidth="110.4000244140625" prefWidth="110.4000244140625" text="DÂN TỘC" />
+            <TableColumn fx:id="sdtColumn" minWidth="120.800048828125" prefWidth="136.800048828125" text="SỐ ĐIỆN THOẠI" />
+            <TableColumn fx:id="maPBColumn" minWidth="91.20001220703125" prefWidth="126.4000244140625" text="MÃ PHÒNG BAN" />
+            <TableColumn fx:id="maCVColumn" prefWidth="121.60003662109375" text="MÃ CHỨC VỤ" />
+            <TableColumn fx:id="maTDHVColumn" prefWidth="96.79998779296875" text="MÃ TDHV" />
+            <TableColumn fx:id="bacLuongColumn" prefWidth="94.39990234375" text="BẬC LƯƠNG" />
+            <TableColumn fx:id="ngayKTColumn" text="NGÀY KT" />
+        </columns>
+    </TableView>
+</AnchorPane>

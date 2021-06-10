@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NhanVien.DanhSachNhanVien">
+    <TableView fx:id="tableNhanVien" layoutX="6.0" layoutY="47.0" onMouseClicked="#getSelected" prefHeight="440.0" prefWidth="1280.0">
+      <columns>
+          <TableColumn fx:id="maNVColum" prefWidth="116.0" text="MÃ NV" />
+          <TableColumn fx:id="nameColum" prefWidth="116.0" text="HỌ TÊN" />
+          <TableColumn fx:id="dobColum" prefWidth="116.0" text="Ngày Sinh" />
+          <TableColumn fx:id="addressColum" prefWidth="116.0" text="Quê Quán" />
+          <TableColumn fx:id="genderColum" prefWidth="116.0" text="GIới Tính" />
+          <TableColumn fx:id="nationColum" prefWidth="116.0" text="Dân Tộc" />
+          <TableColumn fx:id="phoneNumberColum" prefWidth="116.0" text="SĐT" />
+          <TableColumn fx:id="maPBColum" prefWidth="116.0" text="MÃ PB" />
+          <TableColumn fx:id="maCVColum" prefWidth="116.0" text="MÃ CV" />
+          <TableColumn fx:id="maTDHVColum" prefWidth="116.0" text="MÃ TĐHV" />
+          <TableColumn fx:id="bacLuongColum" prefWidth="116.0" text="BAC LUONG" />
+      </columns>
+    </TableView>
+    <Button layoutX="30.0" layoutY="501.0" mnemonicParsing="false" onAction="#add12" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: green;" text="INSERT" textFill="#dee300" />
+    <Button layoutX="30.0" layoutY="544.0" mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: green;" text="UPDATE" textFill="#e8cd04" />
+    <Button layoutX="30.0" layoutY="590.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: red;" text="DELETE" textFill="#dbd10d" />
+    <TextField fx:id="maNVText" layoutX="166.0" layoutY="500.0" prefHeight="26.0" prefWidth="219.0" promptText="mã số nhân viên" />
+    <TextField fx:id="nameText" layoutX="166.0" layoutY="544.0" prefHeight="26.0" prefWidth="219.0" promptText="Họ và Tên" />
+    <TextField fx:id="addressText" layoutX="456.0" layoutY="501.0" prefHeight="26.0" prefWidth="219.0" promptText="Quê Quán" />
+    <TextField fx:id="phoneNumberText" layoutX="741.0" layoutY="544.0" prefHeight="26.0" prefWidth="219.0" promptText="Số Điện Thoại" />
+    <TextField fx:id="nationText" layoutX="456.0" layoutY="590.0" prefHeight="26.0" prefWidth="219.0" promptText="Dân tộc" />
+    <TextField fx:id="genderText" layoutX="457.0" layoutY="544.0" prefHeight="26.0" prefWidth="219.0" promptText="Giới tính" />
+    <TextField fx:id="maPBText" layoutX="741.0" layoutY="590.0" prefHeight="26.0" prefWidth="219.0" promptText="Mã phòng ban" />
+    <TextField fx:id="maCVText" layoutX="741.0" layoutY="501.0" prefHeight="26.0" prefWidth="219.0" promptText="mã chức vụ" />
+    <TextField fx:id="maTDHVText" layoutX="1013.0" layoutY="501.0" prefHeight="26.0" prefWidth="219.0" promptText="trình độ học vấn" />
+    <TextField fx:id="bacLuongText" layoutX="1013.0" layoutY="544.0" prefHeight="26.0" prefWidth="219.0" promptText="bậc lương" />
+   <TextField fx:id="dobText" layoutX="166.0" layoutY="590.0" prefHeight="26.0" prefWidth="219.0" promptText="Ngay sinh" />
+   <Button fx:id="cancelButton" layoutX="1150.0" layoutY="655.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #e50202;" text="CANCEL" textFill="#ebff0c" />
+   <Label alignment="CENTER" layoutX="6.0" prefHeight="40.0" prefWidth="1280.0" text="DANH SÁCH NHÂN VIÊN TRONG CÔNG TY" textFill="#275acc">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="117.0" layoutY="647.0" text="SEARCH">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="searchText" layoutX="219.0" layoutY="646.0" onAction="#searchUser" prefHeight="26.0" prefWidth="805.0" />
+</AnchorPane>

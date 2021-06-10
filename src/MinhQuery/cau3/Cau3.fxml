@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MinhQuery.cau3.Cau3">
+    <Label alignment="CENTER" layoutX="2.0" prefHeight="40.0" prefWidth="1280.0" text="THÔNG TIN CHUYÊN NGÀNH CHIẾM ĐA SỐ TRONG CÔNG TY " />
+    <TableView fx:id="table3" layoutX="2.0" layoutY="70.0" prefHeight="700.0" prefWidth="1280.0">
+        <columns>
+            <TableColumn fx:id="cNganhColumn" minWidth="160.0" prefWidth="378.40003657341003" text="TÊN CHUYÊN NGÀNH" />
+            <TableColumn fx:id="numberColumn" minWidth="160.0" prefWidth="476.8000183105469" text="SỐ LƯỢNG" />
+        </columns>
+    </TableView>
+</AnchorPane>
